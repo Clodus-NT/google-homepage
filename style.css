@@ -1,7 +1,48 @@
-header {
-    margin: 0;
+.topbar {
+    display: flex;
+    flex-flow: row;
 }
 
-footer {
-    
+.topbar-l {
+    display: flex;
+    flex-flow: row;
 }
+
+.about {}
+
+.store {}
+
+.topbar-r {}
+
+.gmail {}
+
+.images {}
+
+.apps {}
+
+.sign-in {}
+
+.mid-box {
+    display: grid;
+}
+
+.bottombar {
+    display: flex;
+    flex-flow: row;
+}
+
+.btmbar-l {}
+
+.advert {}
+
+.business {}
+
+.how {}
+
+.privacy {}
+
+.terms {}
+
+.settings {}
+
+.btmbar-r {}
