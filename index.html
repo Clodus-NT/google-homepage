@@ -2,55 +2,56 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sort of Google</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
     <header>
-        <div class="topbar">
-            <div class="topbar-l">
-                <a class="about" href="">About</a>
-                <a class="store" href="">Store</a>
-            </div>
-            <div class="topbar-r">
-                <a class="gmail" href="">Gmail</a>
-                <a class="images" href="">Images</a>
-                <button class="apps" href="">Google Apps</button>
-                <a class="sign-in" href="">Sign In</a>
-            </div>
-        </div>
+        <nav class="topbar">
+                <ul class="topbar-l">
+                    <a class="about" href="#">About</a>
+                    <a class="store" href="#">Store</a>
+                </ul>
+                <ul class="topbar-r">
+                    <a class="gmail" href="#">Gmail</a>
+                    <a class="images" href="#">Images</a>
+                    <img src="" alt="google apps">
+                    <a class="sign-in" href="#">Sign In</a>
+                </ul>
+        </nav>
     </header>
     <main>
         <div class="mid-box">
             <!--Eventually add a folder for imgs instead of a web link-->
-            <div class="logo">
+            <div class="item logo">
                 <img alt="google homepage logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
             </div>
             <div>
-                <input class="searchbar" type="text">
+                <input class="item searchbar" type="text">
             </div>
             <div class="buttons">
-                <button class="gs-btn">Google Search</button>
-                <button class="lucky-btn">I'm Feeling Lucky</button>
+                <button class="item gs-btn">Google Search</button>
+                <button class="item lucky-btn">I'm Feeling Lucky</button>
             </div>
         </div>
     </main>
 </body>
 <footer>
-    <div class="bottombar">
-        <div class="btmbar-l">
-            <a class="advert" href="">Advertising</a>
-            <a class="business" href="">Business</a>
-            <a class="how" href="">How Search Works</a>
-        </div>
-        <div class="btmbar-r">
-            <a class="privacy" href="">Privacy</a>
-            <a class="terms" href="">Terms</a>
+    <nav class="bottombar">
+        <ul class="btmbar-l">
+            <a class="advert" href="#">Advertising</a>
+            <a class="business" href="#">Business</a>
+            <a class="how" href="#">How Search Works</a>
+        </ul>
+        <ul class="btmbar-r">
+            <a class="privacy" href="#">Privacy</a>
+            <a class="terms" href="#">Terms</a>
             <!-- Settings will need to become a drop down menu (w/dead buttons) i think-->
-            <a class="settings" href="">Settings</a>
-        </div>
-    </div>
+            <a class="settings" href="#">Settings</a>
+        </ul>
+    </nav>
 </footer>
 
 </html>
