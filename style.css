@@ -14,6 +14,11 @@ a {
     font-family: inherit;
     text-decoration: none;
     color: rgb(71, 71, 71);
+    padding: 5px;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* top navigation bar */
@@ -28,8 +33,8 @@ a {
     color: gray;
 }
 
+/*LEFT topbar*/
 .topbar-l {
-    flew-grow: 1;
     display: flex;
     align-items: center;
     margin: 0;
@@ -37,6 +42,22 @@ a {
     text-align: left;
 }
 
+.about {
+    padding-right: 5px;
+    display: flex;
+    flex-grow: 1;
+    margin: auto;
+    padding: 5px;
+}
+
+.store {
+    display: flex;
+    flex-grow: 1;
+    margin: auto;
+    padding: 5px;
+}
+
+/*RIGHT topbar*/
 .topbar-r {
     flex-grow: 1;
     align-items: center;
@@ -45,34 +66,93 @@ a {
     text-align: right;
 }
 
-/* logo, search bar, buttons */
+
+/* MID-BOX logo, search bar, buttons 
 .mid-box {
     display: grid;
-    grid-template-rows: repeat (3, 1fr);
+    grid-template-columns: repeat (4, 1fr);
     grid-auto-rows: 3fr 1fr 1fr;
     gap: 4px;
     padding: 15px;
     margin: auto;
-    margin-top: 100px;
-    width: 700px;
+    margin-top: 150px;
+    width: 100%;
 }
 
 .logo {
-    display: flex;
-    flex-grow: 1;
     margin: auto;
+    width: 100%;
 }
 
 .searchbar {
-    display: flex;
-    flex-grow: 1;
     margin: auto;
+    justify-content: center;
+    width: 100%;
+    border-radius: 25px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(189, 189, 189);
+    outline-style: none;
+    padding: 10px;
 }
 
 .buttons {
-    display: flex;
-    flex-grow: 1;
     margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gs-btn {
+    padding: 6px;
+    width: 45%;
+}
+
+.lucky-btn {
+    padding: 6px;
+    width: 48%;
+}
+*/
+
+.mid-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 3.5fr 1fr 1fr;
+    gap: 10px 0px;
+    grid-template-areas: 
+        ". logo logo ."
+        ". search search ."
+        ". search-button lucky-button .";
+    justify-items: center;
+    align-items: center;
+}
+
+.logo {
+    grid-area: logo;
+    padding-top: 150px;
+}
+.search {
+    grid-area: search;
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+    border-radius: 25px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(170, 170, 170);
+    padding: 15px 8px 0px 20px;
+}
+
+.input-field {
+    border-style: none;
+    outline-style: none;
+    padding: 10px 8px 0px 20px;
+}
+.search-button {
+    grid-area: search-button;
+}
+.lucky-button {
+    grid-area: lucky-button;
 }
 
 /*bottom navigation bar*/
@@ -85,4 +165,23 @@ a {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/*LEFT bottom*/
+.btmbar-l {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    margin: 0;
+    padding-left: 6px;
+    text-align: left;
+}
+
+/*RIGHT bottom*/
+.btmbar-r {
+    flex-grow: 1;
+    align-items: center;
+    margin: 2;
+    padding-right: 15px;
+    text-align: right;
 }
